@@ -8,7 +8,7 @@ English | [简体中文](./README.zh-cn.md)
 IconApron gives most useful icons in use of funplus ui. We provide crose-platform components, including `react-icons`, `vue-icons` and `svg-icons`. 
 
 ## Packages
-> Generate Cross-paltfrom Components
+> Generate Cross-platform Components
 
 Find packages in `packages` folder. NPM packages make it painless to import icon components to your project.
 
