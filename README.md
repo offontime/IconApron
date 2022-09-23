@@ -15,10 +15,10 @@ Find packages in `packages` folder. NPM packages make it painless to import icon
 
 | Name | Github Link | NPM link |
 | :---- | :---- | :---- |
-| React Icons | React Component | @IconApron/react |
-| Vue2 Icons | Vue Component for Vue2 | @IconApron/vue |
-| Vue3 Icons | Vue Component for Vue3 | @IconApron/vue-next |
-| SVG Icons | Pure SVG String | @IconApron/svg |
+| React Icons | React Component | @iconapron/react |
+| Vue2 Icons | Vue Component for Vue2 | @iconapron/vue |
+| Vue3 Icons | Vue Component for Vue3 | @iconapron/vue-next |
+| SVG Icons | Pure SVG String | @iconapron/svg |
 
 ## website
 Here is the website of [IconApron](https://icon.apron.design). Each icon is from svg with in a 30 x 30 grid. each icon has a default color of black(HEX #000000, RGB rgb(0, 0, 0)), but can set font color as a charactor with css(font-color).
@@ -87,5 +87,5 @@ render () {
 
 ## Contact Us
 Lark Group
-![Lark Group](./assets/images/lark-group-qr.png)
+<img src="./assets/images/lark-group-qr.png" width="300px" />
 

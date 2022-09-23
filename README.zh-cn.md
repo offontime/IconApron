@@ -87,5 +87,5 @@ render () {
 
 ## 联系我们
 飞书群
-![飞书群](./assets/images/lark-group-qr.png)
+<img src="./assets/images/lark-group-qr.png" width="300px" />
 
