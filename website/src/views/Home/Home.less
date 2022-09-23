@@ -1,0 +1,556 @@
+.index-page {
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all, 1500ms;
+  }
+  .circle-blue {
+    width: 364px;
+    height: 364px;
+    background: linear-gradient(315deg, rgba(213, 235, 255, 0.5) 20.29%, rgba(215, 239, 247, 0) 85.04%);
+    position: fixed;
+    z-index: 0;
+    top: 200px;
+    left: -100px;
+  }
+  .circle-green {
+    width: 244px;
+    height: 244px;
+    background: linear-gradient(320.47deg, rgba(210, 244, 220, 0.4) 20.46%, rgba(106, 235, 142, 0) 89.53%);;
+    position: fixed;
+    z-index: 1;
+    top: 280px;
+    right: -70px;
+  }
+  .section-intro {
+    background: #F9FBFF;
+    position: relative;
+    .tower {
+      width: 220px;
+      height: 300px;
+      background: url('./images/tower.svg');
+      z-index: 1;
+    }
+    .terminal {
+      width: 253px;
+      height: 129px;
+      background: url('./images/terminal.svg');
+      z-index: 1;
+    }
+    .input-container {
+      z-index: 1;
+    }
+  }
+  .section {
+    .section-title {
+      color: #000000;
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .section-sub-title {
+      color: #999999;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .section-tutorial {
+    .section-tutorial-container {
+      position: relative;
+      z-index: 2;
+      .section-tutorial-item {
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        background: #ffffff;
+        box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.19);
+        .item-title {
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 40px;
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+        }
+        .item-sub-title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #999999;
+          position: absolute;
+          right: 15px;
+          bottom: 55px;
+        }
+      }
+    }
+  }
+  .section-who-is-using {
+    background: #393939;
+    position: relative;
+    z-index: 2;
+    .section-title {
+      color: #ffffff;
+    }
+    .section-sub-title {
+      color: #ffffff;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      width: 450px;
+      margin: 20px auto 0;
+      flex-wrap: wrap;
+    }
+    .fun-plus-container {
+      width: 450px;
+      margin: 40px auto 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .section-about {
+    .section-about-container {
+      position: relative;
+      z-index: 2;
+      p {
+        line-height: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        color: #999999;
+      }
+      .about-member {
+        .about-member-group {
+          margin-top: 60px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        .member-title {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 15px;
+        }
+        .member-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .member-item {
+            position: relative;
+            img {
+              width: 60px;
+              height: 60px;
+              object-fit: cover;
+              border-radius: 50%;
+              filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.17));
+            }
+            .github {
+              width: 20px;
+              height: 20px;
+              background: url('./images/github.svg');
+              position: absolute;
+              top: -5px;
+              right: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .index-page {
+    .section-intro {
+      height: 690px;
+      .tower {
+        position: absolute;
+        top: 141px;
+        left: 50%;
+        transform: translateX(-100% + 15px);
+      }
+      .terminal {
+        position: absolute;
+        top: 313px;
+        left: 50%;
+        transform: translateX(-50% + 15px);
+      }
+      .input-container {
+        position: absolute;
+        top: 421px;
+        left: 50%;
+        transform: translateX(-50%);
+        .search-input365 {
+          width: 345px;
+        }
+      }
+    }
+    .section {
+      padding: 60px 0;
+      .section-title {
+        line-height: 45px;
+      }
+      .section-sub-title {
+        margin-top: 15px;
+        line-height: 15px;
+      }
+    }
+    .section-tutorial {
+      .section-tutorial-container {
+        margin-top: 30px;
+        .section-tutorial-item {
+          width: 345px;
+          height: 210px;
+          border-radius: 8px;
+          background: url('./images/tutorial-background-mobile.png');
+          background-size: 100% 100%;
+          overflow: hidden;
+          margin-top: 15px;
+          &:first-child {
+            margin-top: 0;
+          }
+          .item-sprite {
+            .designer-sprite {
+              width: 103.5px;
+              margin: 33px 31px;
+            }
+            .developer-sprite {
+              width: 172px;
+              margin: 23px 38px;
+            }
+          }
+        }
+      }
+    }
+    .section-who-is-using {
+      .section-sub-title {
+        width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .links {
+        width: 345px;
+      }
+      .fun-plus-container {
+        width: 345px;
+      }
+    }
+    .section-about {
+      .section-about-container {
+        margin-top: 30px;
+        .about-intro {
+          .links {
+            margin-top: 30px;
+          }
+        }
+        .about-member {
+          margin-top: 60px;
+          .member-title {
+            line-height: 15px;
+          }
+          .member-container {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            .member-item {
+              margin: 0 7.5px 15px;
+              img {
+                width: 45px;
+                height: 45px;
+              }
+              .name {
+                margin-top: 15px;
+                line-height: 15px;
+                text-align: center;
+                width: 45px;
+                font-weight: 400;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .index-page {
+    .section-intro {
+      height: 690px;
+      .tower {
+        position: absolute;
+        top: 149px;
+        left: 50%;
+        transform: translateX(-100%);
+      }
+      .terminal {
+        position: absolute;
+        top: 329px;
+        left: 50%;
+        transform: translateX(-50% + 30px);
+      }
+      .input-container {
+        position: absolute;
+        top: 440px;
+        left: 50%;
+        transform: translateX(-50%);
+        .search-input365 {
+          width: 460px;
+        }
+      }
+    }
+    .section {
+      padding: 60px 0;
+      .section-title {
+        line-height: 45px;
+      }
+      .section-sub-title {
+        margin-top: 15px;
+        line-height: 15px;
+      }
+    }
+    .section-tutorial {
+      .section-tutorial-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .section-tutorial-item {
+          width: 345px;
+          height: 210px;
+          border-radius: 8px;
+          background: url('./images/tutorial-background-tablet.png');
+          background-size: 100% 100%;
+          overflow: hidden;
+          margin-top: 15px;
+          &:first-child {
+            margin-top: 0;
+          }
+          .item-sprite {
+            .designer-sprite {
+              width: 103.5px;
+              margin: 33px 31px;
+            }
+            .developer-sprite {
+              width: 172px;
+              margin: 23px 38px;
+            }
+          }
+        }
+      }
+    }
+    .section-who-is-using {
+      .section-sub-title {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .section-about {
+      .section-about-container {
+        margin-top: 30px;
+        .about-intro {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          .intro {
+            width: 345px;
+          }
+          .links {
+            width: 345px;
+          }
+        }
+        .about-member {
+          margin-top: 60px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          .about-member-group {
+            width: 345px;
+            margin-top: 0;
+          }
+          .member-title {
+            line-height: 15px;
+          }
+          .member-container {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .member-item {
+              margin: 0 7.5px 15px;
+              img {
+                width: 45px;
+                height: 45px;
+              }
+              .name {
+                margin-top: 15px;
+                line-height: 15px;
+                text-align: center;
+                width: 45px;
+                font-weight: 400;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  .index-page {
+    .section-intro {
+      height: 580px;
+      .tower {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-100% - 20px);
+      }
+      .terminal {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50% + 30px);
+      }
+      .input-container {
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        .search-input365 {
+          width: 460px;
+        }
+      }
+    }
+    .section {
+      padding: 60px 0;
+      .section-title {
+        line-height: 40px;
+      }
+      .section-sub-title {
+        margin-top: 20px;
+        line-height: 20px;
+      }
+    }
+    .section-tutorial {
+      .section-tutorial-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .section-tutorial-item {
+          width: 460px;
+          height: 260px;
+          border-radius: 8px;
+          background: url('./images/tutorial-background-desktop.png');
+          background-size: 100% 100%;
+          overflow: hidden;
+          box-shadow: 0 0 14px 4px rgba(0, 0, 0, .18);
+          transition: all, 300ms;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.19);
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          .item-sprite {
+            .designer-sprite {
+              width: 103.5px;
+              margin: 48px 93px;
+            }
+            .developer-sprite {
+              width: 172px;
+              margin: 29px 60px;
+            }
+          }
+        }
+      }
+    }
+    .section-who-is-using {
+      .section-sub-title {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .section-about {
+      .section-about-container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        .about-intro {
+          width: 460px;
+          .links {
+            margin-top: 20px;
+          }
+        }
+        .about-member {
+          width: 460px;
+          .about-member-group {
+            width: 345px;
+            margin-top: 0;
+          }
+          .member-title {
+            line-height: 20px;
+          }
+          .member-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .member-item {
+              margin: 0 7.5px 15px;
+              .name {
+                margin-top: 20px;
+                line-height: 20px;
+                text-align: center;
+                width: 60px;
+                font-weight: 400;
+                font-size: 14px;
+              }
+              .github {
+                opacity: 0;
+                cursor: pointer;
+                transition: all, 500ms;
+              }
+              &:hover {
+                .github {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

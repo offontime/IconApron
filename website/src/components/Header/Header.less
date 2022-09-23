@@ -1,0 +1,215 @@
+.apron-header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  .header {
+    height: 100%;
+    position: relative;
+    .logo {
+      width: 100px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .burger-menu {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .shortcut {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      .quick-order-button {
+        .order-button {
+          width: 80px;
+          height: 30px;
+          border-radius: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .apron-header {
+    height: 44px;
+    .header {
+      .logo {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .menu { display: none; }
+      
+      .shortcut {
+        .user-area { display: none; }
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .apron-header {
+    height: 44px;
+    .header {
+      .logo {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .menu { display: none; }
+      .shortcut {
+        .user-area { display: none; }
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  .apron-header {
+    height: 60px;
+    .header {
+      margin: 0 auto;
+      .logo {
+        left: 0;
+      }
+      .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        .menu-item {
+          border-radius: 15px;
+          position: relative;
+          cursor: pointer;
+          transition: all, 300ms;
+          .menu-item-title {
+            height: 30px;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transition: all, 300ms;
+          }
+          .menu-item-sub-menu {
+            max-height: 0;
+            overflow: hidden;
+            border-radius: 0 0 15px 15px;
+            transition: all, 300ms;
+            .sub-menu-item {
+              height: 30px;
+              padding: 0 10px;
+              line-height: 30px;
+              transition: all 300ms;
+              &:hover {
+                padding: 0 10px;
+                background: rgba(180, 180, 180, 0.18);
+                transition: all, 300ms;
+              }
+            }
+          }
+          &:hover {
+            background: rgba(180, 180, 180, 0.18);
+            backdrop-filter: blur(2.5px);
+            .menu-item-title {
+              padding: 0 20px;
+            }
+            .menu-item-sub-menu {
+              max-height: 500px;
+              padding: 5px 0 10px 0;
+              .sub-menu-item {
+                padding: 0 20px;
+              }
+            }
+          }
+        }
+      }
+      .burger-menu { display: none; }
+      .shortcut {
+        .user-area {
+          margin-right: 20px;
+        }
+        .quick-order-button {
+          .order-button {
+            cursor: pointer;
+            transition: all, 300ms;
+            &:hover {
+              backdrop-filter: blur(10px);
+              background:rgba(180, 180, 180, 0.18);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.apron-header-theme-dark {
+  color: #FFFFFF;
+  .order-button {
+    border: 1px solid #FFFFFF;
+  }
+}
+.apron-header-theme-light {
+  color: #000000;
+  .order-button {
+    border: 1px solid #000000;
+  }
+}
+
+.apron-blur {
+  backdrop-filter: blur(5px);
+}
+
+.apron-magic {
+  mix-blend-mode: difference;
+  &.apron-header-theme-light {
+    color: #FFFFFF;
+    .order-button {
+      border: 1px solid #FFFFFF;
+    }
+  }
+  &.apron-header-theme-dark {
+    color: #000000;
+    .order-button {
+      border: 1px solid #000000;
+    }
+  }
+}

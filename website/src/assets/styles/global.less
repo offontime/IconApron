@@ -1,0 +1,99 @@
+@import './magic.less';
+
+@font-face {
+  font-family: Impact;
+  src: url('../fonts/Impact.ttf');
+}
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Pingfang SC', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+p {
+  margin: 0;
+  margin-top: 14px;
+  color: #393939;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+a:link, a:visited {
+  color: #4C9EEA;
+  text-decoration: none;
+}
+a:hover {
+  color: #6FB1EF;
+}
+a:active {
+  color: #1B80DD;
+}
+
+.page {
+  .content-title {
+    text-align: center;
+    .title {
+      font-family: Impact;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 34px;
+    }
+    .sub-title {
+      margin-top: 5px;
+      font-family: 'PingFang SC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #B2B2B2;
+    }
+  }
+}
+
+.container-core {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: Impact;
+}
+
+.h1 {
+  font-size: 28px;
+  line-height: 35px;
+}
+.h2 {
+  font-size: 22px;
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .container-core {
+    width: 345px;
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .container-core {
+    width: 705px;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  .container-core {
+    width: 940px;
+  }
+}

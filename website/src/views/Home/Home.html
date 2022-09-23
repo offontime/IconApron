@@ -1,0 +1,98 @@
+<div class="page index-page">
+  <Header theme="light" />
+  <div class="section section-intro">
+    <div class="tower"></div>
+    <div class="terminal"></div>
+    <div class="input-container">
+      <Input class="search-input365" v-model="searchKeyword" placeholder="搜索图标" />
+    </div>
+  </div>
+  <div class="section section-icon-apron">
+    <div class="container-core">
+      <div class="section-title">丰富多彩的图标库</div>
+      <div class="section-sub-title">20 余种分类，200+ 图标，全部免费使用</div>
+    </div>
+  </div>
+  <div class="section section-tutorial">
+    <div class="container-core">
+      <div class="section-title">图标库使用教程</div>
+      <div class="section-sub-title">全面的使用教程，设计师和工程师都能轻松驾驭</div>
+      <div class="section-tutorial-container">
+        <div class="section-tutorial-item">
+          <div class="item-title">设计师</div>
+          <div class="item-sub-title">Figma 在线复制 icon 方便快速生成稿</div>
+          <div class="item-sprite">
+            <img class="designer-sprite" src="./images/designer-sprite.png" />
+          </div>
+        </div>
+        <div class="section-tutorial-item">
+          <div class="item-title">工程师</div>
+          <div class="item-sub-title">规范、轻量的图标库，包括 React，Vue，SVG</div>
+          <div class="item-sprite">
+            <img class="developer-sprite" src="./images/developer-sprite.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section-who-is-using">
+    <div class="section-title">谁在使用</div>
+    <div class="section-sub-title">FunPlus UI（Vue/Vue Next/React）、FunPlus Taro（React）组件库，以及按时下班几乎所有平台均已覆盖，保证图标样式一致性。</div>
+    <div class="links">
+      <a href="#">下载 React 包</a>
+      <a href="#">下载 Vue 包</a>
+      <a href="#">下载 Vue Next 包</a>
+      <a href="#">下载 SVG 包</a>
+    </div>
+    <div class="fun-plus-container">
+      <img src="./images/funplus.png" />
+    </div>
+  </div>
+  <div class="section section-about">
+    <div class="container-core">
+      <div class="section-title">关于 IconApron</div>
+      <div class="section-sub-title">实用、方便、快速使用在多平台的图标库</div>
+      <div class="section-about-container">
+        <div class="about-intro">
+          <div class="intro">
+            <p>IconApron 图标库是一个配合 FunPlus UI 组件库各种使用场景产生的开源图标库，从而保证了图标在各个场景下的一致性。</p>
+            <p>使用统一风格的图标可以使得产品保持统一的风格和认知。IconApron 主要保持了 FunPlus UI 的设计风格，拥有一致、统一的颜色、尺寸等方面的设计。让使用 FunPlus UI 的项目可以轻松的找到合适的图标</p>
+          </div>
+          <div class="links">
+            <p>Github: <a href="https://github.com/offontime/iconapron" target="_blank">https://github.com/offontime/iconapron</a></p>
+            <p><a href="#">下载 React 包</a></p>
+            <p><a href="#">下载 Vue 包</a></p>
+            <p><a href="#">下载 Vue Next 包</a></p>
+            <p><a href="#">下载 SVG 包</a></p>
+          </div>
+        </div>
+        <div class="about-member">
+          <div class="about-member-group">
+            <div class="member-title">设计师</div>
+            <div class="member-container">
+              <div class="member-item" v-for="item,index in designer">
+                <img :src="item.avatar" />
+                <div class="name">{{ item.name }}</div>
+                <div class="github" v-if="item.github" @click="handleGoSite(item.github)"></div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="about-member-group">
+            <div class="member-title">研发工程师</div>
+            <div class="member-container">
+              <div class="member-item" v-for="item,index in developer">
+                <img :src="item.avatar" />
+                <div class="name">{{ item.name }}</div>
+                <div class="github" v-if="item.github" @click="handleGoSite(item.github)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="circle circle-blue" :style="`top: ${blueCirclePosition}`"></div>
+  <div class="circle circle-green" :style="`top: ${greenCirclePosition}`"></div>
+</div>
