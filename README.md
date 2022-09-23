@@ -87,5 +87,6 @@ render () {
 
 ## Contact Us
 Lark Group
-<img src="./assets/images/lark-group-qr.png" width="300px" />
+
+<img src="./assets/images/lark-group-qr.png" width="400px" />
 
