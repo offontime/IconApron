@@ -1,0 +1,26 @@
+<div class="page-footer">
+  <div class="container-core footer">
+    <div class="i18n">
+      <div class="logo">
+        <img :src="logo" />
+      </div>
+      <div class="locale">关注我们</div>
+    </div>
+    <div class="social">
+      <div class="social-item" v-for="item in social">
+        <a :href="item.url" target="_blank">
+          <img :src="require(`@/assets/images/icon/${item.icon}.svg`)" />
+        </a>
+      </div>
+    </div>
+    <div class="fyi">
+      <div class="copyright">&copy; 2022 OffOnTime - IconApron</div>
+      <div class="terms">
+        <router-link to="/icons">图标库</router-link>
+        <router-link to="/guide">使用指南</router-link>
+        <router-link to="/feedback">建议反馈</router-link>
+        <router-link to="/about">关于我们</router-link>
+      </div>
+    </div>
+  </div>
+</div>
