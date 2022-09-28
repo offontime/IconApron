@@ -1,0 +1,58 @@
+<div>
+  <div class="icon-pad-conponent" @click="drawer = true">
+    <div class="icon-entity">
+      <IconApron :name="data.name" />
+    </div>
+    <div class="icon-info">
+      <div class="called">{{data.text}}</div>
+      <div class="name">{{data.name}}</div>
+    </div>
+  </div>
+  <Drawer :visible.sync="drawer" :title="data.text">
+    <div class="icon-drawer-container">
+      <div class="icon-show-container">
+        <IconApron :name="data.name" />
+      </div>
+      <div class="icon-info-bar">
+        <div class="bar-item">
+          <div class="label">图标名称</div>
+          <div class="value">{{data.text}}</div>
+        </div>
+        <div class="bar-item">
+          <div class="label">图标参数</div>
+          <div class="value">{{data.name}}</div>
+        </div>
+        <div class="bar-item">
+          <div class="label">Vue 图标</div>
+          <div class="value">
+            <Button
+              type="link"
+              v-clipboard:copy="getCopymessage('vue')"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError">复制</Button>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="label">Vue Next 图标</div>
+          <div class="value">
+            <Button
+              type="link"
+              v-clipboard:copy="getCopymessage('vuenext')"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError">复制</Button>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="label">React 图标</div>
+          <div class="value">
+            <Button
+              type="link"
+              v-clipboard:copy="getCopymessage('react')"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError">复制</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Drawer>
+</div>
