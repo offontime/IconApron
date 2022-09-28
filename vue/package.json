@@ -1,0 +1,50 @@
+{
+  "name": "@icon-apron/vue",
+  "description": "A vue2.x icon library for funplus ui",
+  "version": "1.0.2",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name @icon-apron/vue --dest lib package/index.js",
+    "publish:npm": "npm run lib && npm publish --access public"
+  },
+  "author": "mitkimi<i@mitkimi.com>",
+  "main": "lib/@icon-apron/vue.common.js",
+  "homepage": "https://icon.apron.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offontime/IconApron.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
