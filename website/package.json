@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "pub": "npm run build && rsync -r ./dist/* ubuntu@42.193.103.135:/home/apron.design/icon"
+    "pub": "rsync -r ./dist/* ubuntu@42.193.103.135:/home/apron.design/icon"
   },
   "dependencies": {
     "core-js": "^3.6.5",

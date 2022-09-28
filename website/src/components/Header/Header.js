@@ -16,10 +16,18 @@ export default {
     return {
       menu: Menu,
       logo: this.magic ? (this.theme === 'dark' ? LogoDark : LogoLight) : (this.theme === 'light' ? LogoDark : LogoLight),
-      quickOrderVisible: false
+      quickOrderVisible: false,
+      path: '/'
+    }
+  },
+  watch: {
+    '$route.path': (next) => {
+      this.path = next
     }
   },
   mounted () {
+    const { path } = this.$route
+    this.path = path
   },
   methods: {
     handleMenuItemClick (item) {
