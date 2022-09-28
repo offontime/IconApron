@@ -1,6 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > under developing
+current version: (vue: 1.0.2)(react: none)(vue-next: none)(svg: none)
 
 
 English | [简体中文](./README.zh-cn.md)
@@ -16,8 +17,8 @@ Find packages in `packages` folder. NPM packages make it painless to import icon
 | Name | Github Link | NPM link |
 | :---- | :---- | :---- |
 | React Icons | React Component | @iconapron/react |
-| Vue2 Icons | Vue Component for Vue2 | @iconapron/vue |
-| Vue3 Icons | Vue Component for Vue3 | @iconapron/vue-next |
+| Vue2 Icons | [Vue Component for Vue2](https://github.com/offontime/IconApron/tree/master/vue) | [@icon-apron/vue](https://www.npmjs.com/package/@icon-apron/vue) |
+| Vue3 Icons | [Vue Component for Vue3](https://github.com/offontime/IconApron/tree/master/vue-next) | [@icon-apron/vue-next](https://www.npmjs.com/package/@icon-apron/vue-next) |
 | SVG Icons | Pure SVG String | @iconapron/svg |
 
 ## website
@@ -36,9 +37,9 @@ Install dependency via npm or yarn.
 
 #### Step.1 Install Dependency
 ```bash
-npm install @iconapron/vue --save # Vue2 projects
-npm install @iconapron/vue-next --save # Vue3 projects
-npm install @iconapron/react --save # React projects
+npm install @icon-apron/vue --save # Vue2 projects
+npm install @icon-apron/vue-next --save # Vue3 projects
+npm install @icon-apron/react --save # React projects
 
 # you can also use yarn instead of npm
 ```
@@ -48,7 +49,7 @@ npm install @iconapron/react --save # React projects
 
 Vue2 project `main.js`
 ```javascript
-import { IconApron } from '@iconapron/vue'
+import IconApron from '@iconapron/vue'
 Vue.use(IconApron)
 ```
 

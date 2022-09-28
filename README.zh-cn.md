@@ -1,7 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > 正在开发
-
+当前版本: (vue: 1.0.2)(react: 无)(vue-next: 无)(svg: 无)
 
 [English](./README.md) | 简体中文
 
@@ -16,8 +16,8 @@ IconApron 提供了 funplus ui 中使用的大量图标. 我们支持在跨平�
 | 名称 | Github 地址 | NPM 包地址 |
 | :---- | :---- | :---- |
 | React Icons | React Component | @IconApron/react |
-| Vue2 Icons | Vue Component for Vue2 | @IconApron/vue |
-| Vue3 Icons | Vue Component for Vue3 | @IconApron/vue-next |
+| Vue2 Icons | [Vue Component for Vue2](https://github.com/offontime/IconApron/tree/master/vue) | [@icon-apron/vue](https://www.npmjs.com/package/@icon-apron/vue) |
+| Vue3 Icons | [Vue Component for Vue3](https://github.com/offontime/IconApron/tree/master/vue-next) | [@icon-apron/vue-next](https://www.npmjs.com/package/@icon-apron/vue-next) |
 | SVG Icons | Pure SVG String | @IconApron/svg |
 
 ## 网站
@@ -36,9 +36,9 @@ IconApron 为设计师提供了 figma 链接，为工程师提供了 React/Vue �
 
 #### Step.1 安装依赖
 ```bash
-npm install @iconapron/vue --save # Vue2 projects
-npm install @iconapron/vue-next --save # Vue3 projects
-npm install @iconapron/react --save # React projects
+npm install @icon-apron/vue --save # Vue2 projects
+npm install @icon-apron/vue-next --save # Vue3 projects
+npm install @icon-apron/react --save # React projects
 
 # you can also use yarn instead of npm
 ```

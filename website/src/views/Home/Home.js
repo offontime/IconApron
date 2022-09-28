@@ -15,34 +15,34 @@ export default {
       scrollTop: 0,
       designer: [
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/kimi.png',
+          avatar: require('../../assets/images/members/kimi.png'),
           name: '田昊天',
           github: 'https://github.com/mitkimi'
         },
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/Xinzai.png',
+          avatar: require('../../assets/images/members/Xinzai.png'),
           name: '万 鑫',
           github: 'https://github.com/mitkimi'
         }
       ],
       developer: [
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/kimi.png',
+          avatar: require('../../assets/images/members/kimi.png'),
           name: '田昊天',
           github: 'https://github.com/mitkimi'
         },
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/Xinzai.png',
+          avatar: require('../../assets/images/members/Xinzai.png'),
           name: '万 鑫',
           github: 'https://github.com/xinxin417'
         },
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/abcd.png',
+          avatar: require('../../assets/images/members/abcd.png'),
           name: '孙永豪',
           github: 'https://github.com/sun862604148'
         },
         {
-          avatar: '//cdn.illiaccess.com/images/funplus-ui/miniocean.pic.jpeg',
+          avatar: require('../../assets/images/members/miniocean.pic.jpeg'),
           name: '戴海洋',
           github: 'https://github.com/MiniOcean404'
         }
