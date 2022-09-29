@@ -1,0 +1,140 @@
+.document-markdown {
+  width: 100%;
+  color: #393939;
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px;
+    margin: 30px 0 10px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 38px;
+    margin: 15px 0 5px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px 0 5px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h5 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  h6 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    font-size: 14px;
+    th {
+      background: #ECECEC;
+      padding: 0 20px;
+      font-weight: bold;
+    }
+    tr {
+      height: 40px;
+      &:nth-child(2n) {
+        background: #F7F7F7;
+      }
+      td {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 5px 0;
+  }
+
+  code {
+    background: #efeff3;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  ul, ol {
+    margin-left: -20px;
+    li {
+      margin: 5px 0;
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+  pre {
+    background: #f8f8f9;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap;
+    code {
+      background: transparent;
+      padding: 0;
+      line-height: 22px;
+      overflow-x: hidden;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: pre-wrap;
+    }
+  }
+
+  blockquote {
+    padding: 10px 20px;
+    background-color: #F3F3F3;
+    border-left: 5px solid #C4C4C4;
+    margin: 5px 0;
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  a:link, a:visited {
+    color: #4C9EEA;
+    transition: all, 300ms;
+  }
+  a:hover {
+    color: #6FB1EF;
+  }
+  a:active {
+    color: #1B80DD;
+  }
+  // 锚点链接样式污染
+  .header-anchor {
+    opacity: .5;
+    display: none;
+    color: #cccccc;
+    // margin-left: -23px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
