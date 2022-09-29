@@ -63,6 +63,51 @@
   backdrop-filter: blur(20px);
 }
 
+.pad-mobile-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .nav-container {
+    max-width: 345px;
+    .real-navs {
+      .logo {
+        width: 150px;
+        img {
+          width: 100%;
+        }
+      }
+      .menu-item {
+        margin-top: 20px;
+        .menu-item-title {}
+      }
+      .active {
+        .menu-item-title {
+          color: #1B80DD;
+        }
+      }
+    }
+    .close {
+      font-size: 36px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #999999;
+      margin: 100px auto 0;
+    }
+  }
+}
+
 // Mobile
 @media screen and (max-width: 767px) {
   .apron-header {

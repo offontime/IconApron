@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="burger-menu">
+      <div class="burger-menu" @click="padMobileNavShow = true">
         <Icon name="burger" />
       </div>
       <div class="shortcut">
@@ -34,7 +34,32 @@
       </div>
     </div>
   </div>
-  <Drawer :visible.sync="quickOrderVisible" title="Under Developing">
-    正在开发中
+  <Drawer :visible.sync="quickOrderVisible" title="Language 语言">
+    English Version is coming soon, stay tuned!
   </Drawer>
+  <div class="pad-mobile-nav" v-if="padMobileNavShow">
+    <div class="nav-container">
+      <div class="real-navs">
+        <div class="logo">
+          <router-link to="/">
+            <img :src="logo" />
+          </router-link>
+        </div>
+        <div
+          v-for="item in menu"
+          :class="['menu-item', item.to === path ? 'active' : '']"
+          :key="`menu-${item.key}`">
+          <div class="menu-item-title" @click="handleMenuItemClick(item)">{{ item.name }}</div>
+          <div class="menu-item-sub-menu" v-if="item.type === 'submenu'">
+            <div class="sub-menu-item" v-for="sub in item.children" :key="`menu-${item.key}-sub-${sub.key}`"  @click="handleMenuItemClick(sub)">
+              {{ sub.name }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="close" @click="handlePadMobileNavHide">
+        <IconApron name="clear" />
+      </div>
+    </div>
+  </div>
 </div>

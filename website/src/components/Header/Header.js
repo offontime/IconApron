@@ -18,6 +18,7 @@ export default {
       logo: this.magic ? (this.theme === 'dark' ? LogoDark : LogoLight) : (this.theme === 'light' ? LogoDark : LogoLight),
       quickOrderVisible: false,
       hasBackground: false,
+      padMobileNavShow: false,
       path: '/'
     }
   },
@@ -29,6 +30,7 @@ export default {
   mounted () {
     const { path } = this.$route
     this.path = path
+    this.onScroll()
     document.addEventListener('scroll', this.onScroll)
   },
   beforeDestroy () {
@@ -47,7 +49,9 @@ export default {
       // 滚动时候的情况
       const top = window.scrollY
       this.hasBackground = top > 100
-      console.log(top)
+    },
+    handlePadMobileNavHide () {
+      this.padMobileNavShow = false
     }
   }
 }
