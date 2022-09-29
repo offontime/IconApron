@@ -6,7 +6,7 @@
 [English](./README.md) | 简体中文
 
 ## 简介
-IconApron 提供了 funplus ui 中使用的大量图标. 我们支持在跨平台中到处多种图标的代码库，方便您在代码中以组件形式按需引用，比如 `react-icons`, `vue-icons` 和 `svg-icons`. 
+IconApron 提供了 funplus ui 中使用的大量图标. 我们支持在跨平台中导出多种图标的代码库，方便您在代码中以组件形式按需引用，比如 `react-icons`, `vue-icons` 和 `svg-icons`。
 
 ## 代码库
 > 多种代码包
