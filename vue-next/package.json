@@ -1,12 +1,11 @@
 {
   "name": "@icon-apron/vue-next",
   "version": "1.0.1",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name @icon-apron/vue-next --dest lib package/index.js",
+    "lib": "vue-cli-service build --target lib --name @icon-apron/vue-next --dest lib packages/index.js",
     "publish:npm": "npm run lib && npm publish --access public"
   },
   "author": "mitkimi<i@mitkimi.com>",
