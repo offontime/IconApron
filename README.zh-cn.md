@@ -1,7 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > 正在开发
-当前版本: (vue: 1.0.2)(react: 无)(vue-next: 无)(svg: 无)
+当前版本: (vue: 1.0.2)(react: 无)(vue-next: 1.0.1)(svg: 无)
 
 [English](./README.md) | 简体中文
 
@@ -15,7 +15,7 @@ IconApron 提供了 funplus ui 中使用的大量图标. 我们支持在跨平�
 
 | 名称 | Github 地址 | NPM 包地址 |
 | :---- | :---- | :---- |
-| React Icons | React Component | @IconApron/react |
+| React Icons | [React Component](https://github.com/offontime/IconApron/tree/master/) | [@icon-apron/react](https://www.npmjs.com/package/@icon-apron/) |
 | Vue2 Icons | [Vue Component for Vue2](https://github.com/offontime/IconApron/tree/master/vue) | [@icon-apron/vue](https://www.npmjs.com/package/@icon-apron/vue) |
 | Vue3 Icons | [Vue Component for Vue3](https://github.com/offontime/IconApron/tree/master/vue-next) | [@icon-apron/vue-next](https://www.npmjs.com/package/@icon-apron/vue-next) |
 | SVG Icons | Pure SVG String | @IconApron/svg |

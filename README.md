@@ -1,7 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > under developing
-current version: (vue: 1.0.2)(react: none)(vue-next: none)(svg: none)
+current version: (vue: 1.0.3)(react: none)(vue-next: 1.0.1)(svg: none)
 
 
 English | [简体中文](./README.zh-cn.md)
@@ -16,7 +16,7 @@ Find packages in `packages` folder. NPM packages make it painless to import icon
 
 | Name | Github Link | NPM link |
 | :---- | :---- | :---- |
-| React Icons | React Component | @iconapron/react |
+| React Icons | [React Component](https://github.com/offontime/IconApron/tree/master/) | [@icon-apron/react](https://www.npmjs.com/package/@icon-apron/) |
 | Vue2 Icons | [Vue Component for Vue2](https://github.com/offontime/IconApron/tree/master/vue) | [@icon-apron/vue](https://www.npmjs.com/package/@icon-apron/vue) |
 | Vue3 Icons | [Vue Component for Vue3](https://github.com/offontime/IconApron/tree/master/vue-next) | [@icon-apron/vue-next](https://www.npmjs.com/package/@icon-apron/vue-next) |
 | SVG Icons | Pure SVG String | @iconapron/svg |

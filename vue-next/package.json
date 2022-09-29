@@ -1,11 +1,20 @@
 {
-  "name": "vue-next",
-  "version": "0.1.0",
+  "name": "@icon-apron/vue-next",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name @icon-apron/vue-next --dest lib package/index.js",
+    "publish:npm": "npm run lib && npm publish --access public"
+  },
+  "author": "mitkimi<i@mitkimi.com>",
+  "main": "lib/@icon-apron/vue.common.js",
+  "homepage": "https://icon.apron.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offontime/IconApron.git"
   },
   "dependencies": {
     "core-js": "^3.6.5",
