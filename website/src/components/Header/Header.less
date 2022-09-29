@@ -5,6 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9;
+  transition: all, 300ms;
   .header {
     height: 100%;
     position: relative;
@@ -56,6 +57,10 @@
       }
     }
   }
+}
+.apron-background-header {
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(20px);
 }
 
 // Mobile
@@ -158,6 +163,14 @@
                 padding: 0 20px;
               }
             }
+          }
+        }
+        .active {
+          color: #1B80DD;
+          background: rgba(180, 180, 180, 0.18);
+          backdrop-filter: blur(2.5px);
+          .menu-item-title {
+            padding: 0 20px;
           }
         }
       }

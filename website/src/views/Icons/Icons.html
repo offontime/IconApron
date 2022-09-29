@@ -11,7 +11,7 @@
       <div class="icon-group" v-for="icongroup in list" :key="icongroup.name">
         <div class="icon-group-title">{{ icongroup.text }}</div>
         <div class="icon-group-item-container">
-          <IconPad class="icon-item" v-for="item in icongroup.children" :data="item" />
+          <IconPad class="icon-item" v-for="item in icongroup.children" :key="item.name" :data="item" />
         </div>
       </div>
     </div>

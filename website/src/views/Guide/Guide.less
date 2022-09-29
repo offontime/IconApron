@@ -1,0 +1,70 @@
+.guide-page {
+  .section-header {}
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .guide-page {
+    .section-header {
+      height: 45px;
+    }
+    .section-body-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 80px;
+      .nav-menu {
+        display: none;
+      }
+      .document {
+        margin-top: 45px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .guide-page {
+    .section-header {
+      height: 90px;
+    }
+    .section-body-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 80px;
+      .nav-menu {
+        display: none;
+      }
+      .document {
+        margin-top: 45px;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  .guide-page {
+    .section-header {
+      height: 160px;
+    }
+    .section-body-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 80px;
+      .nav-menu {
+        width: 220px;
+      }
+      .document {
+        width: 700px;
+      }
+    }
+  }
+}

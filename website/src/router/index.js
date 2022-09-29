@@ -13,12 +13,17 @@ const routes = [
   {
     path: '/icons',
     name: 'Icons',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Icons')
+    component: () => import('../views/Icons')
+  },
+  {
+    path: '/guide',
+    name: 'Guide',
+    component: () => import('../views/Guide')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About')
+    component: () => import('../views/About')
   }
 ]
 
