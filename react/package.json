@@ -1,0 +1,66 @@
+{
+  "name": "@icon-apron/react",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "startc-dev": "cross-env REACT_APP_ENV=development CUSTOM=1 craco start",
+    "buildc-test": "cross-env REACT_APP_ENV=testing CUSTOM=1 craco build",
+    "buildc-prod": "cross-env REACT_APP_ENV=production CUSTOM=1 craco build",
+    "preview": "serve -s dist",
+    "testc": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "nanoid": "^4.0.0",
+    "postcss-pxtorem": "^6.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "vconsole": "^3.14.6",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.4.4",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.7",
+    "circular-dependency-plugin": "^5.2.2",
+    "compression-webpack-plugin": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.7.1",
+    "react-refresh": "0.14.0",
+    "sass": "^1.53.0",
+    "scss-loader": "^0.0.1",
+    "serve": "^14.0.1",
+    "simple-progress-webpack-plugin": "^2.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.73.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-dashboard": "^3.3.7",
+    "webpackbar": "^5.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
