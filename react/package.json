@@ -1,7 +1,6 @@
 {
   "name": "@icon-apron/react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.1",
   "scripts": {
     "startc-dev": "cross-env REACT_APP_ENV=development CUSTOM=1 craco start",
     "buildc-test": "cross-env REACT_APP_ENV=testing CUSTOM=1 craco build",
@@ -11,8 +10,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lib": "npm run buildc-prod --target lib --name @icon-apron/react --dest lib src/index.js",
+    "publish:npm": "npm run lib && npm publish --access public"
   },
+  "author": "mitkimi<i@mitkimi.com>",
+  "homepage": "https://icon.apron.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offontime/IconApron.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
