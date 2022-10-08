@@ -6,11 +6,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "pub": "npm run build && rsync -r ./dist/* ubuntu@42.193.103.135:/home/apron.design/icon"
+    "pub": "rsync -r ./dist/* ubuntu@42.193.103.135:/home/apron.design/icon"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "funplus-ui": "^0.0.15",
+    "highlight.js": "^11.6.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.5",
+    "markdown-it-chain": "^1.3.0",
+    "markdown-it-container": "^3.0.0",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.3",
     "vue-router": "^3.2.0",

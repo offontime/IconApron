@@ -1,5 +1,5 @@
 <div>
-  <div :class="`apron-header ${blur ? 'apron-blur' : ''} ${magic ? 'apron-magic' : ''} ${`apron-header-theme-${theme}`}`">
+  <div :class="`apron-header ${blur ? 'apron-blur' : ''} ${magic ? 'apron-magic' : ''} ${`apron-header-theme-${theme}`} ${hasBackground ? 'apron-background-header' : ''}`">
     <div class="container-core header">
       <div class="logo">
         <router-link to="/">
@@ -7,7 +7,10 @@
         </router-link>
       </div>
       <div class="menu">
-        <div class="menu-item" v-for="item in menu" :key="`menu-${item.key}`">
+        <div
+          v-for="item in menu"
+          :class="['menu-item', item.to === path ? 'active' : '']"
+          :key="`menu-${item.key}`">
           <div class="menu-item-title" @click="handleMenuItemClick(item)">{{ item.name }}</div>
           <div class="menu-item-sub-menu" v-if="item.type === 'submenu'">
             <div class="sub-menu-item" v-for="sub in item.children" :key="`menu-${item.key}-sub-${sub.key}`"  @click="handleMenuItemClick(sub)">
