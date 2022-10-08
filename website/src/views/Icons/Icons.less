@@ -4,12 +4,8 @@
   }
   .main-container {
     .icon-category-container {
-      position: fixed;
-      left: 10%;
-      top: 10%;
       .to-top {
-        width: 75px;
-        height: 50px;
+        margin-top: 10px;
         font-size: 12px;
         font-weight: 400;
         color: #999999;
@@ -18,8 +14,8 @@
         border-radius: 19.1%;
         transition: all, 300ms;
         &:hover {
-          font-size: 16px;
-          background: #efeff3;
+          font-size: 12px;
+          font-weight: 600;
         }
       }
       .icon-category-item {
@@ -116,12 +112,15 @@
     .main-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: flex-start;
       margin-top: 45px;
       margin-bottom: 180px;
       .icon-category-container {
         width: 165px;
+        position: fixed;
+        top: 140px;
+        left: calc((100vw - 705px) / 2);
       }
       .icon-container {
         width: 524px;
@@ -158,12 +157,15 @@
     .main-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: flex-start;
       margin-top: 40px;
       margin-bottom: 180px;
       .icon-category-container {
         width: 140px;
+        position: fixed;
+        top: 140px;
+        left: calc((100vw - 940px) / 2);
       }
       .icon-container {
         width: 780px;

@@ -44,7 +44,7 @@ export default {
       const windowScrollTop = document.documentElement.scrollTop || document.body.scrollTop
       const timer = {
         step: 50,
-        times: 50,
+        times: 10,
         floorOffsetTop
       }
       document.querySelector('.active').classList.remove('active')
