@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'IconApron';
   src: url('../fonts/iconapron.woff2?t=1664344952517') format('woff2'),
-       url('../fonts/iconapron.woff?t=1664344952517') format('woff'),
-       url('../fonts/iconapron.ttf?t=1664344952517') format('truetype');
+    url('../fonts/iconapron.woff?t=1664344952517') format('woff'),
+    url('../fonts/iconapron.ttf?t=1664344952517') format('truetype');
 }
 
 .ap-heelys:before {
@@ -700,4 +700,3 @@
 .ap-icon-apron:before {
   content: "\e6db";
 }
-

@@ -2,7 +2,7 @@
 
 ## 2022-10-09
 - Vue2 version 1.0.5 published
-- Vue3 version 1.0.2 published
+- Vue3 version 1.0.3 published
 - React vertion 1.0.2 published
 - update icons
 
