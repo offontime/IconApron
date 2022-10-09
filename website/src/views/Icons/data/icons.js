@@ -58,12 +58,16 @@ export const ICONS = [
   { name: 'drone', text: '无人机', category: 'traffic' },
   // 运动
   { name: 'basketball', text: '篮球', category: 'sport' },
+  { name: 'soccer', text: '足球', category: 'sport' },
   { name: 'volleyball', text: '排球', category: 'sport' },
   { name: 'ping-pong', text: '乒乓球', category: 'sport' },
   { name: 'badminton', text: '羽毛球', category: 'sport' },
   { name: 'tennis', text: '网球', category: 'sport' },
   { name: 'billiards', text: '台球', category: 'sport' },
+  { name: 'swimming', text: '游泳', category: 'sport' },
   { name: 'roller-skating', text: '轮滑', category: 'sport' },
+  { name: 'skating-board', text: '滑板', category: 'sport' },
+  { name: 'heelys', text: '暴走鞋', category: 'sport' },
   // 社交
   { name: 'share', text: '分享', category: 'social' },
   { name: 'flag', text: '旗', category: 'social' },
@@ -87,6 +91,7 @@ export const ICONS = [
   { name: 'pay-qr', text: '支付二维码', category: 'social' },
   { name: 'barcode', text: '条形码', category: 'social' },
   { name: 'scan', text: '扫描', category: 'social' },
+  { name: 'ticket', text: '门票', category: 'social' },
   // 后台
   { name: 'create', text: '创建', category: 'backstage' },
   { name: 'edit', text: '编辑', category: 'backstage' },
@@ -113,6 +118,8 @@ export const ICONS = [
   // 硬件
   { name: 'wifi', text: 'Wi-Fi', category: 'hardware' },
   { name: 'wifi-disconnect', text: 'Wi-Fi 未连接', category: 'hardware' },
+  { name: 'boardcast', text: '广播', category: 'hardware' },
+  { name: 'server', text: '服务器', category: 'hardware' },
   { name: 'terminal', text: '终端', category: 'hardware' },
   { name: 'battery-empty', text: '电池-空', category: 'hardware' },
   { name: 'battery-low', text: '电池-低电量', category: 'hardware' },
