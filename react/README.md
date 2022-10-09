@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+![IconApron](https://github.com/offontime/IconApron/raw/master/assets/images/github-logo.png)
+# [IconApron](https://iconapron.offontime.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Version 1.0.2
 
-## Available Scripts
+## Introduction
+IconApron gives most useful icons in use of funplus ui. We provide crose-platform components, including `react-icons`, `vue-icons` and `svg-icons`. 
 
-In the project directory, you can run:
+## website
+Here is the website of [IconApron](https://icon.apron.design). Each icon is from svg with in a 30 x 30 grid. each icon has a default color of black(HEX #000000, RGB rgb(0, 0, 0)), but can set font color as a charactor with css(font-color).
 
-### `npm start`
+## Usage
+Icon Apron provided figma link for designers and React/Vue components for developers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### For Designers
+Everybody can view our [Figma link](https://www.figma.com/file/dWeZkVJM2ORioY2w1YTTvB/Icon-Apron?node-id=12%3A1603) to view, copy all icons.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### For developers
+Install dependency via npm or yarn.
 
-### `npm test`
+> Indeed, you should base on your project is using Vue, Vue next or React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Step.1 Install Dependency
+```bash
+npm install @iconapron/react --save # React projects
 
-### `npm run build`
+# you can also use yarn instead of npm
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Step.2 Import Component library
+> As a sample, we present a React import usage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React project Component 
+```javascript
+import IconApron from '@icon-apron/react'
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Step.3 Use it in HTML or render function
 
-### `npm run eject`
+render function
+```javascript
+render () {
+  return (
+    <div>
+      <IconApron name='icon-apron' />
+    </div>
+  )
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Change Log
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[CHANGELOG](https://github.com/offontime/IconApron/blob/master/CHANGELOG.md) | [更新日志](https://github.com/offontime/IconApron/blob/master/CHANGELOG.zh-cn.md)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact Us
+Lark Group
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="https://github.com/offontime/IconApron/raw/master/assets/images/lark-group-qr.png" width="400px" />
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
