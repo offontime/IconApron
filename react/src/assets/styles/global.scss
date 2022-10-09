@@ -1,8 +1,144 @@
 @font-face {
   font-family: 'IconApron';
-  src: url('../fonts/iconaporn.woff2?t=1664344952517') format('woff2'),
-       url('../fonts/iconapron.woff?t=1664344952517') format('woff'),
-       url('../fonts/iconapron.ttf?t=1664344952517') format('truetype');
+  src: url('../fonts/iconapron.woff2?t=1664344952517') format('woff2'),
+    url('../fonts/iconapron.woff?t=1664344952517') format('woff'),
+    url('../fonts/iconapron.ttf?t=1664344952517') format('truetype');
+}
+
+.ap-heelys:before {
+  content: "\e6e7";
+}
+
+.ap-skating-board:before {
+  content: "\e6f1";
+}
+
+.ap-boardcast:before {
+  content: "\e6f0";
+}
+
+.ap-wifi-disconnect:before {
+  content: "\e6f9";
+}
+
+.ap-swimming:before {
+  content: "\e6fa";
+}
+
+.ap-soccer:before {
+  content: "\e6fb";
+}
+
+.ap-server:before {
+  content: "\e6fc";
+}
+
+.ap-ticket:before {
+  content: "\e6fd";
+}
+
+.ap-roller-skating:before {
+  content: "\e6fe";
+}
+
+.ap-terminal:before {
+  content: "\e6f2";
+}
+
+.ap-traffic-light:before {
+  content: "\e6f3";
+}
+
+.ap-subway:before {
+  content: "\e6f4";
+}
+
+.ap-battery-charging:before {
+  content: "\e6f5";
+}
+
+.ap-tennis:before {
+  content: "\e6f6";
+}
+
+.ap-billiards:before {
+  content: "\e6f7";
+}
+
+.ap-battery-full:before {
+  content: "\e6dc";
+}
+
+.ap-battery-empty:before {
+  content: "\e6dd";
+}
+
+.ap-battery-mid:before {
+  content: "\e6de";
+}
+
+.ap-figma:before {
+  content: "\e6df";
+}
+
+.ap-chrome:before {
+  content: "\e6e0";
+}
+
+.ap-aircraft:before {
+  content: "\e6e1";
+}
+
+.ap-loading:before {
+  content: "\e6e2";
+}
+
+.ap-badminton:before {
+  content: "\e6e3";
+}
+
+.ap-database:before {
+  content: "\e6e4";
+}
+
+.ap-basketball:before {
+  content: "\e6e5";
+}
+
+.ap-calculate:before {
+  content: "\e6e6";
+}
+
+.ap-lark:before {
+  content: "\e6e8";
+}
+
+.ap-message:before {
+  content: "\e6e9";
+}
+
+.ap-battery-low:before {
+  content: "\e6ea";
+}
+
+.ap-ping-pong:before {
+  content: "\e6eb";
+}
+
+.ap-slack:before {
+  content: "\e6ec";
+}
+
+.ap-wifi:before {
+  content: "\e6ed";
+}
+
+.ap-drone:before {
+  content: "\e6ee";
+}
+
+.ap-volleyball:before {
+  content: "\e6ef";
 }
 
 .ap-wechatpay:before {

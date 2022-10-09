@@ -1,11 +1,19 @@
 <div class="page icon-page">
   <Header theme="light" />
-  <div class="section filter-section">
-    筛选格子
-  </div>
+  <div class="section filter-section">筛选格子</div>
   <div class="container-core main-container">
     <div class="icon-category-container">
-      <div :class="['icon-category-item', index === 0 ? 'active' : '']" v-for="item, index in category" :key="item.name">{{ item.text }}</div>
+      <div
+        :class="['icon-category-item', index === 0 ? 'active' : '']"
+        v-for="item, index in category"
+        :key="item.name"
+        @click="toggleCategory(index, $event)"
+      >
+        {{ item.text }}
+      </div>
+      <div class="to-top" @click="toTop">
+        <IconApron name="narrow-up" class="narrow-up"/> 返回顶部 
+      </div>
     </div>
     <div class="icon-container">
       <div class="icon-group" v-for="icongroup in list" :key="icongroup.name">
