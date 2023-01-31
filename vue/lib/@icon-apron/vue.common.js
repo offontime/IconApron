@@ -128,16 +128,14 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a16239ea-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./package/IconApron/component.vue?vue&type=template&id=450ab801&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"39ba3856-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./package/IconApron/component.vue?vue&type=template&id=450ab801&scoped=true&
 var render = function render() {
   var _vm = this,
-      _c = _vm._self._c;
-
+    _c = _vm._self._c;
   return _c('span', {
     class: ['icon-apron', `ap-${_vm.name}`]
   });
 };
-
 var staticRenderFns = [];
 
 // CONCATENATED MODULE: ./package/IconApron/component.vue?vue&type=template&id=450ab801&scoped=true&
@@ -278,29 +276,25 @@ var component = normalizeComponent(
 /* harmony default export */ var IconApron_component = (component.exports);
 // CONCATENATED MODULE: ./package/IconApron/index.js
 
-/* istanbul ignore next */
 
+/* istanbul ignore next */
 IconApron_component.install = function (Vue) {
   Vue.component(IconApron_component.name, IconApron_component);
 };
-
 /* harmony default export */ var IconApron = (IconApron_component);
 // CONCATENATED MODULE: ./package/index.js
 
 const components = [IconApron];
-
 const install = function (Vue) {
   if (install.installed) return;
   components.map(component => {
     Vue.use(component);
   });
-}; //  全局引用可自动安装
-
-
+};
+//  全局引用可自动安装
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
-
 /* harmony default export */ var package_0 = ({
   install,
   ...components

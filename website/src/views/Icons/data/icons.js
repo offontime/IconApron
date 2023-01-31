@@ -92,6 +92,7 @@ export const ICONS = [
   { name: 'barcode', text: '条形码', category: 'social' },
   { name: 'scan', text: '扫描', category: 'social' },
   { name: 'ticket', text: '门票', category: 'social' },
+  { name: 'copy', text: '复制', category: 'social' },
   // 后台
   { name: 'create', text: '创建', category: 'backstage' },
   { name: 'edit', text: '编辑', category: 'backstage' },
@@ -115,6 +116,7 @@ export const ICONS = [
   { name: 'buffer', text: '缓冲', category: 'rnd' },
   { name: 'guide', text: '指南', category: 'rnd' },
   { name: 'database', text: '数据库', category: 'rnd' },
+  { name: 'code', text: '代码', category: 'rnd' },
   // 硬件
   { name: 'wifi', text: 'Wi-Fi', category: 'hardware' },
   { name: 'wifi-disconnect', text: 'Wi-Fi 未连接', category: 'hardware' },
@@ -162,6 +164,8 @@ export const ICONS = [
   { name: 'slack', text: 'Slack', category: 'brand' },
   { name: 'figma', text: 'Figma', category: 'brand' },
   { name: 'chrome', text: '谷歌浏览器', category: 'brand' },
+  { name: 'github', text: 'Github', category: 'brand' },
+  { name: 'taro', text: 'Taro', category: 'brand' },
   // 媒体
   { name: 'play', text: '播放', category: 'media' },
   { name: 'pause', text: '暂停', category: 'media' },
