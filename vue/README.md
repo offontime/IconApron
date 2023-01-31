@@ -1,7 +1,7 @@
 ![IconApron](https://github.com/offontime/IconApron/raw/master/assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 
-> Version 1.0.2
+> Version 1.0.6
 
 ## Introduction
 IconApron gives most useful icons in use of funplus ui. We provide crose-platform components, including `react-icons`, `vue-icons` and `svg-icons`. 

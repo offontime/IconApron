@@ -1,7 +1,7 @@
 {
   "name": "@icon-apron/react",
   "description": "A react icon library for funplus ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "startc-dev": "cross-env REACT_APP_ENV=development CUSTOM=1 craco start",
     "buildc-test": "cross-env REACT_APP_ENV=testing CUSTOM=1 craco build",
