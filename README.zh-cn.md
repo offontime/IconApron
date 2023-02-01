@@ -1,7 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > 正在开发
-当前版本: (vue: 1.0.2)(react: 无)(vue-next: 1.0.1)(svg: 无)
+当前版本: (vue: 1.0.7)(react: 1.0.4)(vue-next: 1.0.6)(svg: 无)
 
 [English](./README.md) | 简体中文
 

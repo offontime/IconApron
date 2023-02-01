@@ -1,7 +1,7 @@
 ![IconApron](./assets/images/github-logo.png)
 # [IconApron](https://iconapron.offontime.com)
 > under developing
-current version: (vue: 1.0.3)(react: none)(vue-next: 1.0.1)(svg: none)
+current version: (vue: 1.0.7)(react: 1.0.4)(vue-next: 1.0.6)(svg: none)
 
 
 English | [简体中文](./README.zh-cn.md)

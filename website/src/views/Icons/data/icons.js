@@ -117,6 +117,8 @@ export const ICONS = [
   { name: 'guide', text: '指南', category: 'rnd' },
   { name: 'database', text: '数据库', category: 'rnd' },
   { name: 'code', text: '代码', category: 'rnd' },
+  { name: 'vue', text: 'Vue', category: 'rnd' },
+  { name: 'react', text: 'React', category: 'rnd' },
   // 硬件
   { name: 'wifi', text: 'Wi-Fi', category: 'hardware' },
   { name: 'wifi-disconnect', text: 'Wi-Fi 未连接', category: 'hardware' },
@@ -149,6 +151,7 @@ export const ICONS = [
   { name: 'amazon', text: '亚马逊', category: 'brand' },
   { name: 'ebay', text: '易贝', category: 'brand' },
   { name: 'davinci-latex', text: '达芬奇', category: 'brand' },
+  { name: 'davinci-mask', text: '达芬奇｜面具', category: 'brand' },
   { name: 'funplus', text: 'FunPlus', category: 'brand' },
   { name: 'airbnb', text: 'Airbnb', category: 'brand' },
   { name: 'bitcoin', text: '比特币', category: 'brand' },
@@ -164,6 +167,7 @@ export const ICONS = [
   { name: 'slack', text: 'Slack', category: 'brand' },
   { name: 'figma', text: 'Figma', category: 'brand' },
   { name: 'chrome', text: '谷歌浏览器', category: 'brand' },
+  { name: 'safari', text: 'Safari 浏览器', category: 'brand' },
   { name: 'github', text: 'Github', category: 'brand' },
   { name: 'taro', text: 'Taro', category: 'brand' },
   // 媒体
@@ -179,6 +183,10 @@ export const ICONS = [
   { name: 'volume-mute', text: '静音', category: 'media' },
   { name: 'volume-increase', text: '音量+', category: 'media' },
   { name: 'volume-decrease', text: '音量-', category: 'media' },
+  { name: 'video', text: '视频', category: 'media' },
+  { name: 'audio', text: '音频', category: 'media' },
+  { name: 'music', text: '音乐', category: 'media' },
+  { name: 'mic', text: '麦克风', category: 'media' },
   // 支付
   { name: 'wechatpay', text: '微信支付', category: 'payment' },
   { name: 'alipay', text: '支付宝', category: 'payment' },
